@@ -28,7 +28,7 @@ This project demonstrates a complete containerized and orchestrated Node.js + Mo
 
 ## 📽️ Screen Recording (Video Demo)
 
-📹 [Click here to watch the video demo](https://drive.google.com/your-video-link)
+📹 [Click here to watch the video demo](https://drive.google.com/file/d/1P8dhdg-vXFOsy3vuoGz3lQ48fq2K5snJ/view?usp=sharing)
 
 In this video:
 
@@ -48,10 +48,49 @@ In this video:
 
 ### Sample `POST`:
 ```bash
-curl -X POST http://<ingress-ip>/api/users \
+curl -X POST http://34.49.15.151/api/users \
   -H "Content-Type: application/json" \
-  -d '{"name":"TestUser", "email":"test@example.com"}'
+  -d '{
+        "name": "Alice 1",
+        "email": "alice@example.com",
+        "age": 25
+      }'
 ```
+
+### Sample `GET`:
+curl http://34.49.15.151/api/users
+
+### Sample response:
+[
+    {
+        "_id": "68932898f0b8429bcc94164c",
+        "name": "Alice 1",
+        "email": "alice@example.com",
+        "age": 25,
+        "__v": 0
+    },
+    {
+        "_id": "689328b1ae5325ddc15fe742",
+        "name": "Alice 2",
+        "email": "alice@example.com",
+        "age": 25,
+        "__v": 0
+    },
+    {
+        "_id": "689335dbae5325ddc15fe9e5",
+        "name": "Alice 3",
+        "email": "alice@example.com",
+        "age": 25,
+        "__v": 0
+    },
+    {
+        "_id": "689335eff0b8429bcc9418fd",
+        "name": "Alice 4",
+        "email": "alice@example.com",
+        "age": 25,
+        "__v": 0
+    }
+]
 
 ---
 
@@ -76,7 +115,7 @@ kubectl delete pod -l app=mongo
 
 Then check the data is still available:
 ```bash
-curl http://<ingress-ip>/api/users
+curl http://34.49.15.151/api/users
 ```
 
 ✅ The old data is retained because MongoDB uses a PersistentVolume.

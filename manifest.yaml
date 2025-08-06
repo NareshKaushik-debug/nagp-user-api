@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: node-api
-        image: gcr.io/YOUR_PROJECT_ID/user-api:latest
+        image: nareshkaushik36/nagp-user-api:0.1
         ports:
         - containerPort: 3000
         env:

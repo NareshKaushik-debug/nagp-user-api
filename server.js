@@ -19,9 +19,7 @@ app.get('/api/users', async (req, res) => {
 
 app.post('/api/users', async (req, res) => {
   const user = new User(req.body);
-  console.log('Creating a new user:', user);
   await user.save();
-  console.log('User created successfully:', user);
   res.status(201).json(user);
 });
 

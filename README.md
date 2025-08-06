@@ -6,14 +6,12 @@ This project demonstrates a complete containerized and orchestrated Node.js + Mo
 
 ## 🔗 Project Links
 
-- 📁 **Code Repository:** [https://github.com/NareshKaushik-debug/nagp-user-api](https://github.com/NareshKaushik-debug/nagp-user-api)
-- 🐳 **Docker Image:** [https://hub.docker.com/r/nareshkaushik36/nagp-user-api](https://hub.docker.com/r/nareshkaushik36/nagp-user-api)
+- 📁 **Code Repository:** [https://github.com/NareshKaushik-debug/nagp-user-api/tree/master](https://github.com/NareshKaushik-debug/nagp-user-api/tree/master)
+- 🐳 **Docker Image:** [https://hub.docker.com/repository/docker/nareshkaushik36/nagp-user-api/general](https://hub.docker.com/repository/docker/nareshkaushik36/nagp-user-api/general)
 - 🌐 **Live API Endpoint:**  
   ```
-  http://<your-ingress-ip-or-domain>/api/users
+  http://34.49.15.151/api/users
   ```
-
-  > Replace `<your-ingress-ip-or-domain>` with your actual Ingress IP or DNS name
 
 ---
 
